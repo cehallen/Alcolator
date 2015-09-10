@@ -34,31 +34,59 @@
                                 <rect key="frame" x="14" y="58" width="572" height="31"/>
                             </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="???" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LhT-SC-gp2">
-                                <rect key="frame" x="31" y="149" width="538" height="26"/>
+                                <rect key="frame" x="240" y="149" width="120" height="26"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="nhQ-zC-oym"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="nhQ-zC-oym"/>
+                                    </mask>
+                                </variation>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
                         <constraints>
+                            <constraint firstItem="LhT-SC-gp2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="1" id="1Nk-T7-bUe"/>
+                            <constraint firstItem="LhT-SC-gp2" firstAttribute="top" secondItem="xWm-OB-Eez" secondAttribute="bottom" constant="61" id="6Ta-Ni-Y1S"/>
+                            <constraint firstItem="LhT-SC-gp2" firstAttribute="top" secondItem="UCY-Bm-sxy" secondAttribute="bottom" constant="8" id="8al-uV-hRs"/>
                             <constraint firstItem="xWm-OB-Eez" firstAttribute="width" secondItem="DwV-pF-poh" secondAttribute="width" id="B61-ey-4jt"/>
+                            <constraint firstItem="LhT-SC-gp2" firstAttribute="width" secondItem="UCY-Bm-sxy" secondAttribute="width" id="CO2-ZJ-KWB"/>
                             <constraint firstItem="LhT-SC-gp2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="15" id="Iuo-iY-PRX"/>
                             <constraint firstItem="DwV-pF-poh" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="J68-YQ-syh"/>
+                            <constraint firstItem="LhT-SC-gp2" firstAttribute="centerX" secondItem="UCY-Bm-sxy" secondAttribute="centerX" constant="-6.25" id="Kih-y0-gZh"/>
+                            <constraint firstItem="LhT-SC-gp2" firstAttribute="width" secondItem="UCY-Bm-sxy" secondAttribute="width" constant="-90.5" id="OAi-yY-7qp"/>
                             <constraint firstItem="UCY-Bm-sxy" firstAttribute="top" secondItem="xWm-OB-Eez" secondAttribute="bottom" constant="8" id="S73-gT-qln"/>
+                            <constraint firstItem="LhT-SC-gp2" firstAttribute="centerX" secondItem="UCY-Bm-sxy" secondAttribute="centerX" constant="-223" id="YtI-l2-qIf"/>
+                            <constraint firstItem="LhT-SC-gp2" firstAttribute="width" secondItem="UCY-Bm-sxy" secondAttribute="width" id="bqE-4O-em5"/>
                             <constraint firstItem="LhT-SC-gp2" firstAttribute="top" secondItem="UCY-Bm-sxy" secondAttribute="bottom" constant="8" id="df5-we-Xbz"/>
                             <constraint firstItem="DwV-pF-poh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="eAr-Ku-B5q"/>
                             <constraint firstAttribute="trailingMargin" secondItem="LhT-SC-gp2" secondAttribute="trailing" constant="15" id="jvy-YF-sxp"/>
                             <constraint firstItem="DwV-pF-poh" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="kEN-PV-trY"/>
                             <constraint firstItem="xWm-OB-Eez" firstAttribute="centerX" secondItem="DwV-pF-poh" secondAttribute="centerX" id="nap-GY-baW"/>
+                            <constraint firstItem="LhT-SC-gp2" firstAttribute="centerX" secondItem="UCY-Bm-sxy" secondAttribute="centerX" id="nfz-Ad-t7U"/>
                             <constraint firstItem="xWm-OB-Eez" firstAttribute="top" secondItem="DwV-pF-poh" secondAttribute="bottom" constant="8" id="osh-gZ-N01"/>
+                            <constraint firstItem="LhT-SC-gp2" firstAttribute="top" secondItem="UCY-Bm-sxy" secondAttribute="bottom" constant="8" id="ppt-zl-4wO"/>
                             <constraint firstItem="xWm-OB-Eez" firstAttribute="width" secondItem="DwV-pF-poh" secondAttribute="width" id="q4m-Rr-JmN"/>
                             <constraint firstItem="UCY-Bm-sxy" firstAttribute="centerX" secondItem="xWm-OB-Eez" secondAttribute="centerX" id="whA-bK-MNZ"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
                                 <exclude reference="q4m-Rr-JmN"/>
+                                <exclude reference="1Nk-T7-bUe"/>
+                                <exclude reference="6Ta-Ni-Y1S"/>
+                                <exclude reference="CO2-ZJ-KWB"/>
+                                <exclude reference="Iuo-iY-PRX"/>
+                                <exclude reference="Kih-y0-gZh"/>
+                                <exclude reference="OAi-yY-7qp"/>
+                                <exclude reference="YtI-l2-qIf"/>
+                                <exclude reference="df5-we-Xbz"/>
+                                <exclude reference="jvy-YF-sxp"/>
+                                <exclude reference="ppt-zl-4wO"/>
                             </mask>
                         </variation>
                         <connections>
