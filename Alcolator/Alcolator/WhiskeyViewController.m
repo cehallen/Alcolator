@@ -55,7 +55,7 @@
     }
     
     NSString *shotOrShots;
-    if (sender.value >= 0.5 && sender.value < 1.5) {
+    if (sender.value < 1.5) {
         shotOrShots = @"shot";
     } else {
         shotOrShots = @"shots";
