@@ -14,7 +14,10 @@
 @property (weak, nonatomic) IBOutlet UISlider *beerCountSlider;
 @property (weak, nonatomic) IBOutlet UILabel *resultLabel;
 
+@property (strong, nonatomic) NSString *originalNavTitle;
+
 - (void)buttonPressed:(UIButton *)sender;
+- (void)sliderValueDidChange:(UISlider *)sender;
 
 @end
 

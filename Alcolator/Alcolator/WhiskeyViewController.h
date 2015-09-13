@@ -10,4 +10,6 @@
 
 @interface WhiskeyViewController : ViewController
 
+@property (strong, nonatomic) NSString *originalNavTitle;
+
 @end

@@ -33,7 +33,26 @@
 }
 
 - (IBAction)sliderValueDidChange:(UISlider *)sender {
-    NSLog(@"slider value changed to %f", sender.value);
+//    NSLog(@"slider value changed to %f", sender.value);
+//    WORK HERE.  Objective: show slider value in navbar, eg 'Whiskey (12 shots)', or 'Wine (1 glass)'
+    
+//    repeating code you have in the button not great here.
+//    is float to int equality done like this, 1.2 == 1?  if so I don't need the range.
+//    could do the glass v glasses AND shot v shots all here, but to mimic the button I'll try overriding in the whiskey .m file, even if it's not DRY
+
+    if (!self.originalNavTitle) {
+        self.originalNavTitle = self.navigationItem.title;
+    }
+    
+    NSString *glassOrGlasses;
+    if (sender.value < 1.5) {
+        glassOrGlasses = @"glass";
+    } else {
+        glassOrGlasses = @"glasses";
+    }
+    
+    self.navigationItem.title = [NSString stringWithFormat:@"%@ (%.0f %@)", self.originalNavTitle, sender.value, glassOrGlasses];
+    
     [self.beerPercentTextField resignFirstResponder];
 }
 

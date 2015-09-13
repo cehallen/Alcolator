@@ -89,9 +89,9 @@
 			children = (
 				F12B92F11BA0602E001AB143 /* AppDelegate.h */,
 				F12B92F21BA0602E001AB143 /* AppDelegate.m */,
-				F12B92F41BA0602E001AB143 /* ViewController.h */,
 				F1815F491BA5A9C300FF80C8 /* MainMenuViewController.h */,
 				F1815F4A1BA5A9C300FF80C8 /* MainMenuViewController.m */,
+				F12B92F41BA0602E001AB143 /* ViewController.h */,
 				F12B92F51BA0602E001AB143 /* ViewController.m */,
 				F1815F461BA349ED00FF80C8 /* WhiskeyViewController.h */,
 				F1815F471BA349ED00FF80C8 /* WhiskeyViewController.m */,
