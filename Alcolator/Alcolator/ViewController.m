@@ -35,7 +35,9 @@
 - (IBAction)sliderValueDidChange:(UISlider *)sender {
     NSLog(@"slider value changed to %f", sender.value);
     [self.beerPercentTextField resignFirstResponder];
-    [self.tabBarItem setBadgeValue:[NSString stringWithFormat:@"%d", (int) sender.value]];
+//    [self.tabBarItem setBadgeValue:[NSString stringWithFormat:@"%d", (int) sender.value]];
+    // Goal: get the numberOfWineGlassesForEquivalentAlcoholAmount value to badge instead.  repeat in whiskey button pressed action.
+    // can't work here, work in the buttonPressed instead since you want that value not the slider val
 }
 
 - (IBAction)buttonPressed:(UIButton *)sender {
@@ -71,6 +73,10 @@
     // generate the result text and display to label
     NSString *resultText = [NSString stringWithFormat:NSLocalizedString(@"%d %@ (with %.2f%% alcohol) contains as much alcohol as %.1f %@ of wine.", nil), numberOfBeers, beerText, [self.beerPercentTextField.text floatValue], numberOfWineGlassesForEquivalentAlcoholAmount, wineText];
     self.resultLabel.text = resultText;
+    
+    // display result number to badge
+    [self.tabBarItem setBadgeValue:[NSString stringWithFormat:@"%d", (int) numberOfWineGlassesForEquivalentAlcoholAmount]];
+    
 }
 
 - (IBAction)tapGestureDidFire:(UITapGestureRecognizer *)sender {
